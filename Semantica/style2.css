@@ -15,7 +15,24 @@ body{
     width: 150px;
     height: 150px;
     background-color: green;
-    position: absolute;
+    /*position: absolute;
     animation-name: exemplo;
-    animation-duration: 10s;
+    animation-duration: 10s;*/
+    margin: auto;
+    margin-top: 100px;
+    transition: all 1s linear;
+}
+
+.exemplo:hover{
+    width: 300px;
+    background-color: red;
+}
+
+a{
+    color: black;
+    transition: all 1s linear;
+}
+
+a:hover{
+    color: red;
 }
