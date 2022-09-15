@@ -1,0 +1,33 @@
+section {
+    background-color: #dddddd;
+    padding: 2px;
+    display: flex;
+    flex-direction: row;
+}
+
+div {
+    background-color: #ff0000;
+    margin: 10px;
+    padding: 5px;
+    font-size: 18px;
+    transition: 0.5s linear;
+}
+
+div:hover {
+    background-color: #ccc;
+}
+
+.div1 {
+flex: 1;
+}
+
+.div2 {
+flex: 1;
+}
+
+.div3 {
+flex: 2;
+}
+
+
+
