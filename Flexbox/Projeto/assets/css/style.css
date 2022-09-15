@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header{
@@ -54,10 +55,9 @@ nav a{
     text-decoration: none;
     transition: all 0.5s linear;
     color: #727272;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
-a:hover{
+nav .active a, a:hover{
     background-color: #39aae1;
     color: #fff;
 }
@@ -66,7 +66,72 @@ a:hover{
     background-image: url('../images/img1.jpg');
     background-position: center;
     background-size: cover;
-    height: 500px;
-    width: 990px;
-    margin: auto;
+    height: 670px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.banner_headline{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner_headline h1{
+    font-size: 50px;
+    max-width: 280px;
+    text-shadow: 0px 1px 0px #555;
+    margin: 0;
+    padding: 0;
+}
+
+.banner_headline p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 21px;
+    max-width: 280px;
+    margin: 0;
+    padding: 0;
+}
+
+.banner_options{
+    height: 210px;
+    display: flex;
+}
+
+.banner_options a{
+    text-decoration: none;
+    color:#fff;
+    border: 1px solid #fff;
+    padding: 4px;
+}
+
+.banner_options p{
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.banner1,
+.banner2,
+.banner3{
+    flex: 1;
+    padding: 10px;
+}
+
+.banner1{
+    background-color: #39aae1;
+}
+
+.banner2{
+    background-color: #0079c7;
+}
+
+.banner3{
+    background-color: #2b4c99;
 }
