@@ -1,8 +1,10 @@
 section {
     background-color: #dddddd;
-    padding: 2px;
+    height: 500px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
 }
 
 div {
@@ -11,23 +13,14 @@ div {
     padding: 5px;
     font-size: 18px;
     transition: 0.5s linear;
+    width: 100px;
+    height: 100px;
 }
 
 div:hover {
     background-color: #ccc;
 }
 
-.div1 {
-flex: 1;
-}
-
-.div2 {
-flex: 1;
-}
-
-.div3 {
-flex: 2;
-}
 
 
 
