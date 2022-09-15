@@ -2,9 +2,11 @@ section {
     background-color: #dddddd;
     height: 500px;
     display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row; /* Direção do flex */
+    flex-wrap: wrap; /*Faz quebra de linha caso os itens não caiba na mesma linha*/
+    justify-content: center; /* Alinha os itens no container de acordo com a direção do flex-direction */
+    align-items: flex-start; /* Alinha os itens do cintainer de acordo com a direção contrária do flex-direction Ex: Se o flex-direction estiver em row essa propriedade alinha os itens em column */
+    align-content: space-between; /* Alinha todos os itens dentro do container de uma vez, só funciona com o wrap ativado. */
 }
 
 div {
@@ -15,6 +17,10 @@ div {
     transition: 0.5s linear;
     width: 100px;
     height: 100px;
+}
+
+.div10 {
+    align-self: flex-end;
 }
 
 div:hover {
